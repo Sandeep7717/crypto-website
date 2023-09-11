@@ -74,7 +74,15 @@ ul li {
   display: none;
 }
 
-.menu {
+.header.fixed-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  border-bottom: none;
+}
+.header .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,16 +94,16 @@ ul li {
           justify-content: space-between;
   padding: 15px 0;
 }
-.menu .logo-heading h3 {
+.header .menu .logo-heading h3 {
   display: none;
 }
-.menu .humburger-icon {
+.header .menu .humburger-icon {
   display: none;
 }
-.menu .logo a img {
+.header .menu .logo a img {
   max-width: 150px;
 }
-.menu .navbar > ul {
+.header .menu .navbar > ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -103,18 +111,18 @@ ul li {
       -ms-flex-align: center;
           align-items: center;
 }
-.menu .navbar > ul > li {
+.header .menu .navbar > ul > li {
   padding: 12px 15px;
   font-size: 14px;
   position: relative;
 }
-.menu .navbar > ul > li:hover ul {
+.header .menu .navbar > ul > li:hover ul {
   opacity: 1;
   visibility: visible;
   -webkit-transform: rotateX(0);
           transform: rotateX(0);
 }
-.menu .navbar > ul > li ul {
+.header .menu .navbar > ul > li ul {
   position: absolute;
   left: 0;
   top: 46px;
@@ -136,7 +144,7 @@ ul li {
   transition: transform 0.8s, opacity 0.4s, -webkit-transform 0.8s;
   z-index: 9999;
 }
-.menu .navbar > ul > li ul li a {
+.header .menu .navbar > ul > li ul li a {
   display: block;
   padding: 15px 15px;
   font-size: 16px;
@@ -144,21 +152,21 @@ ul li {
   transition: 0.5s all ease;
   color: var(--brand-drop-down);
 }
-.menu .navbar > ul > li ul li a:hover {
+.header .menu .navbar > ul > li ul li a:hover {
   border-color: var(--white);
   color: var(--brand-yellow);
 }
-.menu .navbar > ul > li img {
+.header .menu .navbar > ul > li img {
   padding: 0 5px;
   width: 22px;
   -webkit-transition: 0.5s ease all;
   transition: 0.5s ease all;
 }
-.menu .navbar > ul > li:hover a img {
+.header .menu .navbar > ul > li:hover a img {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
-.menu .navbar > ul > li:last-child {
+.header .menu .navbar > ul > li:last-child {
   background: var(--brand-yellow);
   padding: 15px 40px;
   border-radius: 5px;
@@ -167,7 +175,7 @@ ul li {
   -webkit-transition: 0.9s ease all;
   transition: 0.9s ease all;
 }
-.menu .navbar > ul > li:last-child .circle {
+.header .menu .navbar > ul > li:last-child .circle {
   width: 30px;
   height: 30px;
   border-radius: 50px;
@@ -176,19 +184,19 @@ ul li {
   right: -8px;
   bottom: -9px;
 }
-.menu .navbar > ul > li:last-child:hover {
+.header .menu .navbar > ul > li:last-child:hover {
   background: var(--brand-circle);
 }
-.menu .navbar > ul > li:last-child:hover:hover a {
+.header .menu .navbar > ul > li:last-child:hover:hover a {
   color: var(--black);
 }
-.menu .navbar > ul > li a {
+.header .menu .navbar > ul > li a {
   color: var(--brand-primary);
   -webkit-transition: 0.5s ease all;
   transition: 0.5s ease all;
   padding: 30px 0;
 }
-> .menu .navbar > ul > li:not(:last-child):hover a {
+> .header .menu .navbar > ul > li:not(:last-child):hover a {
   color: var(--brand-yellow);
 }
 
@@ -826,6 +834,10 @@ ul li {
   font-style: italic;
   width: 94%;
   margin: 10px 0;
+}
+.testimonal .testimonal-all .right-testimonal .man-all .left-man img {
+  border-radius: 50px;
+  width: 74px;
 }
 .testimonal .testimonal-all .right-testimonal .man-all .right-man {
   position: absolute;
