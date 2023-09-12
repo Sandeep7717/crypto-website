@@ -74,14 +74,6 @@ ul li {
   display: none;
 }
 
-.header.fixed-header {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background: rgba(0, 0, 0, 0.8);
-  z-index: 99;
-  border-bottom: none;
-}
 .header .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1508,6 +1500,8 @@ footer .footer-bootom h3 {
   cursor: pointer;
   color: transparent;
   border: 0;
+  top: -70px;
+  position: absolute;
   outline: none;
   background: transparent;
 }
