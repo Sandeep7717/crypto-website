@@ -56,113 +56,92 @@
             width: 54%;
         }
 
-        .display {
-            display: grid;
-            grid-template-columns: 20% 50%;
-            gap: 0.1em;
-
-
-
-
-
-        }
-
-        .HOVER {
-            --width: 100%;
-            --time: 0.7s;
-
+        .btn-slider {
+            background: var(--brand-yellow);
+            padding: 15px 40px;
+            border-radius: 5px;
             position: relative;
-            display: inline-block;
-            height: 40px;
-            padding: 1em;
-            z-index: 999;
-            color: #fff;
-            background: #f8ba04;
             overflow: hidden;
+            transition: 0.9s ease all;
+            display: inline-block;
+
+            a {
+                color: var(--brand-primary);
+                transition: 0.5s ease all;
+                padding: 30px 0;
+
+            }
+
+            &:hover {
+                background: var(--brand-circle);
+
+                &:hover a {
+                    color: var(--black);
+
+                }
+
+            }
+
+
         }
-
-        .HOVER span {
-            position: absolute;
-            display: block;
-            content: "";
-            z-index: 0;
-            width: 0;
-            height: 0;
-            z-index: -1;
-            border-radius: 100%;
-            background: #f00;
-
-            transform: translate(-50%, -50%);
-            transition: width var(--time), padding-top var(--time);
-
-        }
-
-        .HOVER &:hover span {
-            width: calc(var(--width) * 2.25);
-            padding-top: calc(var(--width) * 2.25);
-        }
-
-
-
-
 
 
     }
-}
 
 
-// .circle-one {
-//     width: 30px;
-//     height: 30px;
-//     border-radius: 50px;
-//     position: absolute;
-//     background: var(--brand-circle);
-//     right: -8px;
-//     bottom: -9px;
-// }
-
-
-
-
-.imgshape {
-    position: absolute;
-    top: 50px;
-    left: 600px;
-    -webkit-animation: spin 8s linear infinite;
-    -moz-animation: spin 8s linear infinite;
-    animation: spin 8s linear infinite;
-
-}
-
-.imgshape-one {
-    position: absolute;
-    top: 180px;
-    left: -70px;
-    -webkit-animation: spin 8s linear infinite;
-    -moz-animation: spin 8s linear infinite;
-    animation: spin 8s linear infinite;
-
-}
-
-.imgshape-two {
-    position: absolute;
-    top: 420px;
-    left: -70px;
-    -webkit-animation: spin 8s linear infinite;
-    -moz-animation: spin 8s linear infinite;
-    animation: spin 8s linear infinite;
-
-}
-
-
-
-
-
-@-webkit-keyframes spin {
-
-    100% {
-        -webkit-transform: rotate(360deg)
+    .circle-one {
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        position: absolute;
+        background: var(--brand-circle);
+        right: -8px;
+        bottom: -9px;
     }
 
-    ;
+
+
+
+    .imgshape {
+        position: absolute;
+        top: 50px;
+        left: 600px;
+        -webkit-animation: spin 8s linear infinite;
+        -moz-animation: spin 8s linear infinite;
+        animation: spin 8s linear infinite;
+
+    }
+
+    .imgshape-one {
+        position: absolute;
+        top: 180px;
+        left: -70px;
+        -webkit-animation: spin 8s linear infinite;
+        -moz-animation: spin 8s linear infinite;
+        animation: spin 8s linear infinite;
+
+    }
+
+    .imgshape-two {
+        position: absolute;
+        top: 420px;
+        left: -70px;
+        -webkit-animation: spin 8s linear infinite;
+        -moz-animation: spin 8s linear infinite;
+        animation: spin 8s linear infinite;
+
+    }
+
+
+
+
+
+    @-webkit-keyframes spin {
+
+        100% {
+            -webkit-transform: rotate(360deg)
+        }
+
+        ;
+    }
 }

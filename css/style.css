@@ -398,74 +398,64 @@ fieldset {
   line-height: 30px;
   width: 54%;
 }
-.all-pannel .left-pannel .display {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 20% 0.1em 50%;
-  grid-template-columns: 20% 50%;
-  gap: 0.1em;
-}
-.all-pannel .left-pannel .HOVER {
-  --width: 100%;
-  --time: 0.7s;
+.all-pannel .left-pannel .btn-slider {
+  background: var(--brand-yellow);
+  padding: 15px 40px;
+  border-radius: 5px;
   position: relative;
-  display: inline-block;
-  height: 40px;
-  padding: 1em;
-  z-index: 999;
-  color: #fff;
-  background: #f8ba04;
   overflow: hidden;
+  -webkit-transition: 0.9s ease all;
+  transition: 0.9s ease all;
+  display: inline-block;
 }
-.all-pannel .left-pannel .HOVER span {
+.all-pannel .left-pannel .btn-slider a {
+  color: var(--brand-primary);
+  -webkit-transition: 0.5s ease all;
+  transition: 0.5s ease all;
+  padding: 30px 0;
+}
+.all-pannel .left-pannel .btn-slider:hover {
+  background: var(--brand-circle);
+}
+.all-pannel .left-pannel .btn-slider:hover:hover a {
+  color: var(--black);
+}
+.all-pannel .circle-one {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
   position: absolute;
-  display: block;
-  content: "";
-  z-index: 0;
-  width: 0;
-  height: 0;
-  z-index: -1;
-  border-radius: 100%;
-  background: #f00;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-transition: width var(--time), padding-top var(--time);
-  transition: width var(--time), padding-top var(--time);
+  background: var(--brand-circle);
+  right: -8px;
+  bottom: -9px;
 }
-.HOVER .all-pannel .left-pannel:hover span {
-  width: calc(var(--width) * 2.25);
-  padding-top: calc(var(--width) * 2.25);
-}
-
-.imgshape {
+.all-pannel .imgshape {
   position: absolute;
   top: 50px;
   left: 600px;
   -webkit-animation: spin 8s linear infinite;
   animation: spin 8s linear infinite;
 }
-
-.imgshape-one {
+.all-pannel .imgshape-one {
   position: absolute;
   top: 180px;
   left: -70px;
   -webkit-animation: spin 8s linear infinite;
   animation: spin 8s linear infinite;
 }
-
-.imgshape-two {
+.all-pannel .imgshape-two {
   position: absolute;
   top: 420px;
   left: -70px;
   -webkit-animation: spin 8s linear infinite;
   animation: spin 8s linear infinite;
 }
-
 @-webkit-keyframes spin {
   100% {
     -webkit-transform: rotate(360deg);
   }
 }
+
 .features {
   background: var(--brand-second-primary);
   padding: 50px 0 100px 0;
