@@ -20,7 +20,7 @@
             <a href="#"><img src="./images/logo-white.png" alt=""></a>
         </div>
         <div class="header">
-        <div class="container">
+            <div class="container">
 
 
                 <div class="menu">
@@ -113,7 +113,7 @@
                         <div class="all-pannel">
                             <div class="left-pannel">
                                 <h1>
-                                     Experience of
+                                    Experience of
                                     Digital Transection
                                 </h1>
                                 <div class="shape">
@@ -125,10 +125,12 @@
                                 </div>
                                 <p>Cryptography, encryption process of transforming information
                                     referred to as plaintext using done.</p>
-                                <div class="button">
+                                <div class="display">
 
-                                    <a href="#">Get Started Now</a>
-                                    <div class="circle-one"></div>
+                                    <a href="#" class="HOVER">Get Started Now
+                                        <span></span>
+                                    </a>
+                                    <!-- <div class="circle-one"></div> -->
                                 </div>
                             </div>
                             <div class="right-pannel">
@@ -742,7 +744,7 @@
 
 
         </div>
-        
+
 
 
 
@@ -816,6 +818,41 @@
                 });
 
             });
+
+            const ANIMATEDCLASSNAME = "animated";
+            const ELEMENTS = document.querySelectorAll(".HOVER");
+            const ELEMENTS_SPAN = [];
+
+            ELEMENTS.forEach((element, index) => {
+                let addAnimation = false;
+                // Elements that contain the "FLASH" class, add a listener to remove
+                // animation-class when the animation ends
+                if (element.classList[1] == "FLASH") {
+                    element.addEventListener("animationend", e => {
+                        element.classList.remove(ANIMATEDCLASSNAME);
+                    });
+                    addAnimation = true;
+                }
+
+                // If The span element for this element does not exist in the array, add it.
+                if (!ELEMENTS_SPAN[index])
+                    ELEMENTS_SPAN[index] = element.querySelector("span");
+
+                element.addEventListener("mouseover", e => {
+                    ELEMENTS_SPAN[index].style.left = e.pageX - element.offsetLeft + "px";
+                    ELEMENTS_SPAN[index].style.top = e.pageY - element.offsetTop + "px";
+
+                    // Add an animation-class to animate via CSS.
+                    if (addAnimation) element.classList.add(ANIMATEDCLASSNAME);
+                });
+
+                element.addEventListener("mouseout", e => {
+                    ELEMENTS_SPAN[index].style.left = e.pageX - element.offsetLeft + "px";
+                    ELEMENTS_SPAN[index].style.top = e.pageY - element.offsetTop + "px";
+                });
+            });
+
+
         </script>
 
 
