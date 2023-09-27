@@ -1704,7 +1704,7 @@ footer .footer-bootom h3 {
   font-size: 30px;
   line-height: 20px;
   position: absolute;
-  top: 0;
+  top: -100px;
   left: 0;
   width: 20px;
   height: 20px;
