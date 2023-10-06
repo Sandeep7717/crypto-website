@@ -1311,6 +1311,7 @@ footer .footer-bootom h3 {
   }
   .black-bg .header .container .menu .navbar ul li img {
     margin-left: 315px;
+    display: none;
   }
   .black-bg .all-pannel {
     display: block;
