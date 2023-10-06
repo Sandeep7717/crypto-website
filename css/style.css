@@ -1543,7 +1543,7 @@ footer .footer-bootom h3 {
   }
   footer .footer-bootom {
     display: block;
-    margin-bottom: 500px;
+    margin-bottom: 10px;
   }
   footer .footer-bootom .left h3 {
     font-size: 18px;
