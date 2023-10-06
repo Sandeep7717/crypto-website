@@ -1152,7 +1152,7 @@ fieldset {
 
 footer {
   background: var(--brand-bg);
-  padding: 100px 0;
+  padding: 100px 0 20px 0;
 }
 footer .all-footer {
   display: -webkit-box;
@@ -1778,6 +1778,7 @@ footer .footer-bootom h3 {
 
 .slick-track:after {
   clear: both;
+  padding: 5px;
 }
 
 .slick-loading .slick-track {
