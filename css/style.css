@@ -818,7 +818,7 @@ fieldset {
 .bit ul li .one {
   position: absolute;
   top: -15px;
-  right: 170px;
+  right: 44%;
   color: var(--white);
   background: var(--brand-light-black);
   padding: 10px 15px;
@@ -829,7 +829,7 @@ fieldset {
 .bit ul li .two {
   position: absolute;
   top: -15px;
-  right: 170px;
+  right: 44%;
   color: var(--white);
   background: var(--brand-light-black);
   padding: 10px 15px;
@@ -840,7 +840,7 @@ fieldset {
 .bit ul li .three {
   position: absolute;
   top: -15px;
-  right: 170px;
+  right: 44%;
   color: var(--white);
   background: var(--brand-light-black);
   padding: 10px 15px;
@@ -851,7 +851,7 @@ fieldset {
 .bit ul li .four {
   position: absolute;
   top: -15px;
-  right: 170px;
+  right: 44%;
   color: var(--white);
   background: var(--brand-light-black);
   padding: 10px 15px;
@@ -1781,7 +1781,7 @@ footer .footer-bootom h3 {
 
 .slick-track:after {
   clear: both;
-  padding: 5px;
+  
 }
 
 .slick-loading .slick-track {
