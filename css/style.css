@@ -798,6 +798,7 @@ fieldset {
   padding: 30px;
   border-radius: 5px;
   width: 80%;
+  margin: auto;
 }
 .bit ul li .img-bitcoin img {
   width: 100%;
@@ -812,6 +813,7 @@ fieldset {
   width: 80%;
   font-size: 16px;
   line-height: 30px;
+  margin: auto;
 }
 .bit ul li .one {
   position: absolute;
@@ -1779,7 +1781,7 @@ footer .footer-bootom h3 {
 
 .slick-track:after {
   clear: both;
-
+  padding: 5px;
 }
 
 .slick-loading .slick-track {
